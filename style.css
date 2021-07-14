@@ -6,33 +6,71 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
-/*  header start */
+
+/* navbar start */
+.navbar {
+  width: 100%;
+  height: 6rem;
+  background-color: #2d259f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.5rem;
+}
+.navbar a {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+.navbar a:hover {
+  color: #e02c6d;
+}
+.navbar button {
+  background-color: #e02c6d;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.7rem 1.4rem;
+}
+.fa-angle-double-right {
+  margin-right: 1.2rem;
+}
+/* navbar end */
+
+/*-----  header start */
+
+header {
+  width: 100vw;
+  background-color: #2d259f;
+}
 
 .firstBlog {
-  width: 100vw;
-  height: 800px;
+  width: 100%;
   background-color: #2d259f;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.6rem;
 }
 
 .firstBlog .text {
-  width: 485px;
-  height: 230px;
-  font-size: 1.7rem;
+  flex-basis: 50%;
+  font-size: 1.5rem;
   line-height: 80px;
-  margin: 207px 50px 240px 140px;
+  padding: 2rem;
   color: #fff;
+  margin-left: 2.5rem;
 }
 
 .firstBlog img {
-  width: 550px;
-  height: 438px;
-  margin: 150px 140px 85px 50px;
+  padding: 2rem;
+  min-width: 20rem;
+  flex-basis: 50%;
 }
 .firstBlog button {
   width: 168px;
@@ -53,9 +91,11 @@ a {
 }
 
 @media only screen and (max-width: 599px) {
+  .navbar {
+    display: none;
+  }
+
   .firstBlog {
-    width: 100vw;
-    height: 695px;
     background-color: #2d259f;
     display: flex;
     flex-direction: column;
@@ -63,11 +103,9 @@ a {
     align-items: center;
   }
   .firstBlog .text {
-    width: 385px;
-    height: 230px;
+    flex-basis: 100%;
     font-size: 1.5rem;
     line-height: 64px;
-    margin: 100px 30px 100px 80px;
     color: #fff;
   }
 
@@ -92,7 +130,6 @@ a {
   .firstBlog img {
     width: 370px;
     height: 259px;
-    margin: 0 16px 61px 15px;
   }
 }
 
@@ -103,7 +140,6 @@ a {
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 80px 150px 160px 150px;
 }
 .player {
   width: 330px;
@@ -125,7 +161,6 @@ a {
   .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 55px 50px 55px 50px;
   }
   .player {
     width: 330px;
@@ -149,10 +184,9 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 500px;
-  height: 220px;
+  width: 100%;
+  margin-top: 3rem;
   text-align: center;
-  margin: 50px 400px;
 }
 
 .footerLogo img {
@@ -180,8 +214,7 @@ footer p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    height: 220px;
+
     text-align: center;
     margin: 50px 0;
   }
@@ -197,3 +230,19 @@ footer p {
   }
 }
 /* footer end */
+
+/* Fix */
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.football {
+  width: 100%;
+}
+
+.football img {
+  height: 100%;
+  width: 100%;
+}
