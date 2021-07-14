@@ -12,7 +12,7 @@ a {
 /*  header start */
 
 .firstBlog {
-  width: 100%;
+  width: 100vw;
   height: 800px;
   background-color: #2d259f;
   display: flex;
@@ -52,9 +52,9 @@ a {
   letter-spacing: 0.1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   .firstBlog {
-    width: 100%;
+    width: 100vw;
     height: 695px;
     background-color: #2d259f;
     display: flex;
@@ -67,7 +67,7 @@ a {
     height: 230px;
     font-size: 1.5rem;
     line-height: 64px;
-    margin: 102px 66px 100px 16px;
+    margin: 100px 30px 100px 80px;
     color: #fff;
   }
 
@@ -121,7 +121,7 @@ a {
 .player img {
   width: 100%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -174,7 +174,7 @@ footer p {
   color: #000;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   footer {
     display: flex;
     justify-content: center;
