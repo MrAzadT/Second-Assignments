@@ -10,6 +10,10 @@
 a {
   text-decoration: none;
 }
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
 
 /* navbar start */
 .navbar {
@@ -42,7 +46,7 @@ a {
 }
 /* navbar end */
 
-/*-----  header start */
+/*  header start */
 
 header {
   width: 100vw;
@@ -88,6 +92,14 @@ header {
 .firstBlog button:hover {
   background-color: #ff005d;
   letter-spacing: 0.1rem;
+}
+.football {
+  width: 100%;
+}
+
+.football img {
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 599px) {
@@ -140,6 +152,7 @@ header {
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 1.5rem 6rem 4rem 6rem;
 }
 .player {
   width: 330px;
@@ -230,19 +243,3 @@ footer p {
   }
 }
 /* footer end */
-
-/* Fix */
-
-body {
-  overflow-x: hidden;
-  width: 100vw;
-}
-
-.football {
-  width: 100%;
-}
-
-.football img {
-  height: 100%;
-  width: 100%;
-}
