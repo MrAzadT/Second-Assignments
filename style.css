@@ -102,11 +102,160 @@ header {
   width: 100%;
 }
 
+/* header end */
+
+/* main area start */
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.5rem 6rem 4rem 6rem;
+}
+.player {
+  width: 330px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding: 15px;
+  margin: 15px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img {
+  width: 100%;
+}
+.players p {
+  opacity: 0.8;
+}
+
+/* main area end */
+
+/* Copa America */
+.copaAmerica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.copaAmerica h2 {
+  font-size: 2.5rem;
+}
+.copaAmerica h3 {
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+.cardsInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  width: 20%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+.copaAmerica img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+/* Copa America */
+
+/*  Top goal scorers */
+.topGoal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.topList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.topPlayer {
+  width: 25%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+.topGoal img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+.topGoal h2 {
+  font-size: 2.5rem;
+}
+.topGoal h4 {
+  font-size: 2rem;
+}
+.topGoal h3 {
+  opacity: 0.8;
+  font-size: 1.5rem;
+}
+/*  Top goal scorers end  */
+
+/* footer start */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footerLogo img {
+  width: 483px;
+  height: 100px;
+}
+.socialIcon a {
+  font-size: 2rem;
+  color: #969bab;
+  margin: 30px 10px;
+  transition: 0.3s;
+}
+
+.socialIcon a:hover {
+  color: #2d259f;
+}
+footer p {
+  margin-top: 20px;
+  color: #000;
+}
+
+/* footer end */
+
 @media only screen and (max-width: 599px) {
   .navbar {
     display: none;
   }
-
+  /* header  */
   .firstBlog {
     background-color: #2d259f;
     display: flex;
@@ -140,37 +289,13 @@ header {
     padding-left: 5px;
   }
   .firstBlog img {
+    margin-left: 2rem;
     width: 370px;
     height: 259px;
   }
-}
+  /* header end */
 
-/* header end */
-
-/* main area start */
-
-.players {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 1.5rem 6rem 4rem 6rem;
-}
-.player {
-  width: 330px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  padding: 15px;
-  margin: 15px auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-}
-.player img {
-  width: 100%;
-}
-@media only screen and (max-width: 599px) {
+  /* main area  */
   .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -188,82 +313,82 @@ header {
     border-radius: 10px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   }
-}
-/* main area end */
+  /* main area end */
 
-/* Copa America */
-.CopaAmerica {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-}
-.CopaAmerica h2 {
-  font-size: 2.5rem;
-}
-.CopaAmerica h3 {
-  margin-bottom: 15px;
-}
-.cardsInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.card {
-  width: 20%;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
+  /* Copa America 2021 */
 
-  margin: 20px;
-  text-align: left;
-  border-radius: 10px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  padding: 10px;
-}
-.CopaAmerica img {
-  width: 100%;
-  height: 300px;
-  border-radius: 5px;
-  padding-bottom: 20px;
-}
+  .copaAmerica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardsInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 60%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+  }
+  /* Copa America 2021 end */
 
-/* Copa America */
+  /* Top goal scorers */
+  .topGoal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  .topList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .topPlayer {
+    width: 65%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+  }
+  .topGoal img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+  }
+  .topGoal h2 {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .topGoal h4 {
+    font-size: 2rem;
+  }
+  .topGoal h3 {
+    opacity: 0.8;
+    font-size: 1.5rem;
+  }
 
-/* footer start */
-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 3rem;
-  text-align: center;
-}
+  /* Top goal scorers end */
 
-.footerLogo img {
-  width: 483px;
-  height: 100px;
-}
-.socialIcon a {
-  font-size: 2rem;
-  color: #969bab;
-  margin: 30px 10px;
-  transition: 0.3s;
-}
-
-.socialIcon a:hover {
-  color: #2d259f;
-}
-footer p {
-  margin-top: 20px;
-  color: #000;
-}
-
-@media only screen and (max-width: 599px) {
+  /* footer */
   footer {
     display: flex;
     justify-content: center;
@@ -283,5 +408,6 @@ footer p {
     margin: 30px 8px;
     transition: 0.3s;
   }
+
+  /* footer end */
 }
-/* footer end */
